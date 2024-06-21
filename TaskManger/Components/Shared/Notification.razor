@@ -1,0 +1,61 @@
+﻿@using TaskManger.Enums
+@using TaskManger.Services
+
+<SnackbarStack @ref="NotificationRef" Location="SnackbarStackLocation.Top" />
+
+
+@code {
+    [Inject] MessageService MessageService { get; set; }
+
+    public SnackbarStack NotificationRef { get; set; }
+
+    private SnackbarColor _color;
+    private string _message;
+    private IconName _icon;
+
+
+    protected override void OnInitialized()
+    {
+        MessageService.OnShow += ShowMessage;
+    }
+
+
+    private void ShowMessage(string Message, NotificationEnum notification)
+    {
+        ShowingMessage(notification, Message);
+        NotificationRef.PushAsync(Message, _color, opt => { opt.IntervalBeforeClose = 2500; });
+        StateHasChanged();
+    }
+
+
+    private void ShowingMessage(NotificationEnum level, string Message)
+    {
+        switch (level)
+        {
+            case NotificationEnum.Info:
+                _color = SnackbarColor.Primary;
+                _icon = IconName.InfoCircle;
+                break;
+
+            case NotificationEnum.Success:
+                _color = SnackbarColor.Success;
+                _icon = IconName.CheckCircle;
+                break;
+
+            case NotificationEnum.Warning:
+                _color = SnackbarColor.Warning;
+                _icon = IconName.ExclamationTriangle;
+                break;
+
+            case NotificationEnum.Error:
+                _color = SnackbarColor.Danger;
+                _icon = IconName.TimesCircle;
+                break;
+
+            default:
+                throw new ArgumentOutOfRangeException(nameof(level), level, null);
+        }
+
+        _message = Message;
+    }
+}

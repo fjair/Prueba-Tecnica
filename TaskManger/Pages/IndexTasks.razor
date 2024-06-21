@@ -1,0 +1,252 @@
+﻿@page "/"
+
+@using TaskManger.Models
+
+@if(Loading)
+{
+    <p>Cargando ...</p>
+}
+else
+{    
+    <Div Class="d-flex justify-content-between">
+        <h1 class="page-header">Metas</h1>
+
+        <Breadcrumb class="ml-auto">
+            <BreadcrumbItem>
+                <BreadcrumbLink>
+                    <Icon Name="IconName.Home"></Icon>
+                </BreadcrumbLink>
+            </BreadcrumbItem>
+
+            <BreadcrumbItem Active>
+                <BreadcrumbLink>Metas</BreadcrumbLink>
+            </BreadcrumbItem>
+        </Breadcrumb>
+    </Div>
+
+    <Row>
+        <Column ColumnSize="ColumnSize.Is4.OnFullHD.Is4.OnDesktop.Is4.OnTablet.Is12.OnMobile">
+            <Card Class="bg.white shadow-sm">
+                <CardHeader>
+                    <Button Size="Size.Small" Color="Color.Success" Clicked="@AddGoalModal">
+                        <Icon Name="IconName.Add" />
+                        <Strong>Nueva Meta</Strong>
+                    </Button>
+                </CardHeader>
+
+                <CardBody>
+                    <ListGroup Mode="ListGroupMode.Selectable" SelectedItem="GoalSelectedID" SelectedItemChanged="@OnItemSelectedChanged">                        
+                        @foreach (var item in GoalsList)
+                        {
+                            <ListGroupItem Name="@item.ID.ToString()">
+                                <Div Flex="Flex.JustifyContent.Between" Width="Width.Is100">
+                                    <Heading Size="HeadingSize.Is5" Margin="Margin.Is1.FromBottom">@item.Name</Heading>
+                                    <Div>
+                                        <Tooltip Text="Editar" Placement="TooltipPlacement.Bottom">
+                                            <Button Size="Size.ExtraSmall" Background="Background.Transparent" Clicked="() => UpdateGoalModal(item)">
+                                                <Icon Name="IconName.Edit" />
+                                            </Button>
+                                        </Tooltip>
+                                        
+                                        <Tooltip Text="Eliminar" Placement="TooltipPlacement.Bottom">
+                                            <Button Size="Size.ExtraSmall" Background="Background.Transparent" Clicked="() => DeleteGoalModal(item)">
+                                                <Icon Name="IconName.Delete" />
+                                            </Button>
+                                        </Tooltip>
+                                    </Div>
+                                </Div>
+                                <Small>Fecha Creada: @item.CreatedDate.ToShortDateString()</Small><br />
+
+                                <Small>Tareas completadas: @GoalSelected.TasksList.Where(x => x.IsCompleted).ToList().Count / @GoalSelected.TasksList.ToList().Count</Small>
+                                <Progress Value="@item.ProgressValue" Animated Striped Color="Color.Info" />
+
+                            </ListGroupItem>
+                        }                        
+                    </ListGroup>                    
+                </CardBody>
+            </Card>
+        </Column>
+        
+        <Column ColumnSize="ColumnSize.Is8.OnFullHD.Is8.OnDesktop.Is8.OnTablet.Is12.OnMobile">
+            @if (!string.IsNullOrEmpty(GoalSelectedID))
+            {
+                <Card Class="bg-white shadow-sm">
+                    <CardHeader>
+                        <strong>@GoalSelected.Name</strong>
+                    </CardHeader>
+
+                    <CardBody>                        
+                        <Button Size="Size.ExtraSmall" Color="Color.Success" Clicked="@AddTaaskModal" Class="me-1">
+                            <Icon Name="IconName.Add"></Icon>
+                            <Strong>AGREGAR TAREA</Strong>
+                        </Button>
+
+                        @if (selectedTaasks.Count > 0 )
+                        {
+                            <Button Size="Size.ExtraSmall" Color="Color.Secondary" Clicked="() => OnCompleteTask(TaaskSelected)" Class="mb-2 me-1">
+                                <Icon Name="IconName.Edit"></Icon>
+                                <Strong>COMPLETAR TAREA</Strong>
+                            </Button>
+
+                            <Button Size="Size.ExtraSmall" Color="Color.Primary" Clicked="() => UpdateTaaskModal(TaaskSelected)" Class="mb-2 me-1">
+                                <Icon Name="IconName.Edit"></Icon>
+                                <Strong>EDITAR</Strong>
+                            </Button>
+
+                            <Button Size="Size.ExtraSmall" Color="Color.Danger" Clicked="() => DeleteTaaskModal(TaaskSelected)" Class="mb-2 me-1">
+                                <Icon Name="IconName.Delete"></Icon>
+                                <Strong>ELIMINAR</Strong>
+                            </Button>
+                        }    
+                        <br /> <br />
+
+                        <DataGrid TItem="TaaskModel"
+                              Filterable
+                              FilterMode="DataGridFilterMode.Menu"
+                              Data="@GoalSelected.TasksList.ToList()"
+                              Responsive
+                              Narrow
+                              Hoverable
+                              ShowPager
+                              ShowPageSizes
+                              PageSize="5"
+                              PagerPosition="DataGridPagerPosition.Bottom"
+                              HeaderThemeContrast="ThemeContrast.Light"
+                              SelectionMode="Blazorise.DataGrid.DataGridSelectionMode.Multiple"
+                              @bind-SelectedRow="@TaaskSelected"
+                              @bind-SelectedRows="@selectedTaasks"
+                              >
+
+                        <DataGridColumns>
+                                <DataGridMultiSelectColumn TItem="TaaskModel" Width="30px"></DataGridMultiSelectColumn>
+                                <DataGridCommandColumn TItem="TaaskModel" />
+                            <DataGridColumn Field="IsFavorite" Caption="Estatus">
+                                <DisplayTemplate>
+                                   
+                                </DisplayTemplate>
+                            </DataGridColumn>
+                            <DataGridColumn Field="@nameof(TaaskModel.Name)" Caption="Nombre" Filterable HeaderTextAlignment="TextAlignment.Center" TextAlignment="TextAlignment.Center"></DataGridColumn>
+                                <DataGridColumn Field="@nameof(TaaskModel.CreatedDate)" Caption="F. Creación" Filterable DisplayFormat="{0:dd/MMM/yyyy}"></DataGridColumn>
+                                <DataGridColumn Field="@nameof(TaaskModel.IsCompleted)" Caption="Estatus" Filterable >
+                                    <DisplayTemplate>
+                                        @if(context.IsCompleted)
+                                        {
+                                            <Badge Color="Color.Success">Completada</Badge>
+                                        }
+                                        else
+                                        {
+                                            <Badge Color="Color.Light">Abierta</Badge>
+                                        }
+                                    </DisplayTemplate>
+                                </DataGridColumn>                                
+                        </DataGridColumns>
+                       
+                        <EmptyTemplate>
+                            <div class="box">
+                                Sin Registros
+                            </div>
+                        </EmptyTemplate>
+
+                        <NextPageButtonTemplate><Icon Class="fa-solid fa-angle-right" /></NextPageButtonTemplate>
+                        <PreviousPageButtonTemplate><Icon Class="fa-solid fa-angle-left" /></PreviousPageButtonTemplate>
+                        <LastPageButtonTemplate><Icon Class="fa-solid fa-angles-right" /></LastPageButtonTemplate>
+                        <FirstPageButtonTemplate><Icon Class="fa-solid fa-angles-left" /></FirstPageButtonTemplate>
+                    </DataGrid>
+                    </CardBody>
+                </Card>
+            }
+        </Column>        
+    </Row>
+
+
+    @* MODAL FOR GOALS *@
+    <Modal @ref="ModalGoalRef" Animated>
+        <ModalContent Centered>
+            <ModalHeader>
+                <ModalTitle>
+                    <Icon  Name="IconName.Edit"/>
+                    META
+                </ModalTitle>
+                <CloseButton />
+            </ModalHeader>
+
+            <ModalBody>
+                <EditForm Model="GoalModel">
+                    <Validations @ref="ValidationsRef" Model="GoalModel" Mode="ValidationMode.Manual" ValidateOnLoad="false">
+                        <Field>
+                            <Small>Nombre:</Small>
+                            <Validation Validator="ValidationRule.IsNotEmpty">
+                                <TextEdit Size="Size.Small" @bind-Text="GoalModel.Name">
+                                    <Feedback>
+                                        <ValidationError>Campo Obligatorio!</ValidationError>
+                                    </Feedback>
+                                </TextEdit>
+                            </Validation>
+                        </Field>
+                    </Validations>
+                </EditForm>
+            </ModalBody>
+
+            <ModalFooter>
+                <Button Size="Size.Small" Color="Color.Primary" Clicked="@SaveGoal">
+                    <Icon Name="IconName.Save"></Icon>
+                    <Strong>GUARDAR</Strong>
+                </Button>
+                
+                <Button Background="Background.Transparent" Clicked="() => ModalGoalRef.Hide()">                    
+                    <Strong>CANCELAR</Strong>
+                </Button>
+            </ModalFooter>
+        </ModalContent>
+    </Modal>
+
+    
+    @* MODAL FOR TAAKS *@
+    <Modal @ref="ModalTaaskRef" Animated>
+        <ModalContent Centered>
+            <ModalHeader>
+                <ModalTitle>
+                    <Icon Name="IconName.Edit" />
+                    TAREA
+                </ModalTitle>
+                <CloseButton />
+            </ModalHeader>
+
+            <ModalBody>
+                <EditForm Model="TaaskModel">
+                    <Validations @ref="ValidationsRef2" Model="TaaskModel" Mode="ValidationMode.Manual" ValidateOnLoad="false">
+                        <Field>
+                            <Small>Nombre:</Small>
+                            <Validation Validator="ValidationRule.IsNotEmpty">
+                                <TextEdit Size="Size.Small" @bind-Text="TaaskModel.Name">
+                                    <Feedback>
+                                        <ValidationError>Campo Obligatorio!</ValidationError>
+                                    </Feedback>
+                                </TextEdit>
+                            </Validation>
+                        </Field>
+                    </Validations>
+                </EditForm>
+            </ModalBody>
+
+            <ModalFooter>
+                <Button Size="Size.Small" Color="Color.Primary" Clicked="SaveTaask">
+                    <Icon Name="IconName.Save"></Icon>
+                    <Strong>GUARDAR</Strong>
+                </Button>
+
+                <Button Background="Background.Transparent" Clicked="() => ModalTaaskRef.Hide()">
+                    <Strong>CANCELAR</Strong>
+                </Button>
+            </ModalFooter>
+        </ModalContent>
+    </Modal>
+
+
+    <TaskManger.Components.Shared.DeleteModal @ref="DeleteModalRef" DeleteRecord="() => OnDeleteGoal(GoalModel)" />
+    <TaskManger.Components.Shared.DeleteModal @ref="DeleteModalRef2" DeleteRecord="() => OnDeleteTaaskl(TaaskModel)" />
+}
+
+
+
+

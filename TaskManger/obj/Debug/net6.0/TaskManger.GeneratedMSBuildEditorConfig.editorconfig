@@ -1,0 +1,59 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TaskManger
+build_property.RootNamespace = TaskManger
+build_property.ProjectDir = C:\Users\licen\OneDrive\Documentos\PROYECTOS LOCALES\TaskManger\TaskManger\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\licen\OneDrive\Documentos\PROYECTOS LOCALES\TaskManger\TaskManger
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/licen/OneDrive/Documentos/PROYECTOS LOCALES/TaskManger/TaskManger/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/licen/OneDrive/Documentos/PROYECTOS LOCALES/TaskManger/TaskManger/Components/Layout/SideMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcU2lkZU1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/licen/OneDrive/Documentos/PROYECTOS LOCALES/TaskManger/TaskManger/Components/Layout/TopMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcVG9wTWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/licen/OneDrive/Documentos/PROYECTOS LOCALES/TaskManger/TaskManger/Components/Shared/DeleteModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcRGVsZXRlTW9kYWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/licen/OneDrive/Documentos/PROYECTOS LOCALES/TaskManger/TaskManger/Components/Shared/Notification.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcTm90aWZpY2F0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/licen/OneDrive/Documentos/PROYECTOS LOCALES/TaskManger/TaskManger/Layouts/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0c1xNYWluTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/licen/OneDrive/Documentos/PROYECTOS LOCALES/TaskManger/TaskManger/Pages/IndexTasks.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXhUYXNrcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/licen/OneDrive/Documentos/PROYECTOS LOCALES/TaskManger/TaskManger/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/licen/OneDrive/Documentos/PROYECTOS LOCALES/TaskManger/TaskManger/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/licen/OneDrive/Documentos/PROYECTOS LOCALES/TaskManger/TaskManger/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,216 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\licen\\OneDrive\\Documentos\\PROYECTOS LOCALES\\TaskManger\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FED09B6D-4C3A-4800-B57A-B4DFDCC351D5}|TaskManager.API\\TaskManager.API.csproj|c:\\users\\licen\\onedrive\\documentos\\proyectos locales\\taskmanger\\taskmanager.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FED09B6D-4C3A-4800-B57A-B4DFDCC351D5}|TaskManager.API\\TaskManager.API.csproj|solutionrelative:taskmanager.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE1646A6-F387-4FFA-BE36-941834D32ABD}|TaskManger\\TaskManger.csproj|c:\\users\\licen\\onedrive\\documentos\\proyectos locales\\taskmanger\\taskmanger\\services\\appservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE1646A6-F387-4FFA-BE36-941834D32ABD}|TaskManger\\TaskManger.csproj|solutionrelative:taskmanger\\services\\appservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE1646A6-F387-4FFA-BE36-941834D32ABD}|TaskManger\\TaskManger.csproj|c:\\users\\licen\\onedrive\\documentos\\proyectos locales\\taskmanger\\taskmanger\\repositoryapi\\repositoryapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE1646A6-F387-4FFA-BE36-941834D32ABD}|TaskManger\\TaskManger.csproj|solutionrelative:taskmanger\\repositoryapi\\repositoryapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE1646A6-F387-4FFA-BE36-941834D32ABD}|TaskManger\\TaskManger.csproj|c:\\users\\licen\\onedrive\\documentos\\proyectos locales\\taskmanger\\taskmanger\\pages\\indextasks.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE1646A6-F387-4FFA-BE36-941834D32ABD}|TaskManger\\TaskManger.csproj|solutionrelative:taskmanger\\pages\\indextasks.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE1646A6-F387-4FFA-BE36-941834D32ABD}|TaskManger\\TaskManger.csproj|c:\\users\\licen\\onedrive\\documentos\\proyectos locales\\taskmanger\\taskmanger\\pages\\indextasks.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE1646A6-F387-4FFA-BE36-941834D32ABD}|TaskManger\\TaskManger.csproj|solutionrelative:taskmanger\\pages\\indextasks.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE1646A6-F387-4FFA-BE36-941834D32ABD}|TaskManger\\TaskManger.csproj|c:\\users\\licen\\onedrive\\documentos\\proyectos locales\\taskmanger\\taskmanger\\models\\goalmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE1646A6-F387-4FFA-BE36-941834D32ABD}|TaskManger\\TaskManger.csproj|solutionrelative:taskmanger\\models\\goalmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE1646A6-F387-4FFA-BE36-941834D32ABD}|TaskManger\\TaskManger.csproj|c:\\users\\licen\\onedrive\\documentos\\proyectos locales\\taskmanger\\taskmanger\\components\\shared\\deletemodal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE1646A6-F387-4FFA-BE36-941834D32ABD}|TaskManger\\TaskManger.csproj|solutionrelative:taskmanger\\components\\shared\\deletemodal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE1646A6-F387-4FFA-BE36-941834D32ABD}|TaskManger\\TaskManger.csproj|c:\\users\\licen\\onedrive\\documentos\\proyectos locales\\taskmanger\\taskmanger\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE1646A6-F387-4FFA-BE36-941834D32ABD}|TaskManger\\TaskManger.csproj|solutionrelative:taskmanger\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 15,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\licen\\OneDrive\\Documentos\\PROYECTOS LOCALES\\TaskManger\\TaskManager.API\\appsettings.json",
+              "RelativeDocumentMoniker": "TaskManager.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\licen\\OneDrive\\Documentos\\PROYECTOS LOCALES\\TaskManger\\TaskManager.API\\appsettings.json",
+              "RelativeToolTip": "TaskManager.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-21T19:50:36.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppService.cs",
+              "DocumentMoniker": "C:\\Users\\licen\\OneDrive\\Documentos\\PROYECTOS LOCALES\\TaskManger\\TaskManger\\Services\\AppService.cs",
+              "RelativeDocumentMoniker": "TaskManger\\Services\\AppService.cs",
+              "ToolTip": "C:\\Users\\licen\\OneDrive\\Documentos\\PROYECTOS LOCALES\\TaskManger\\TaskManger\\Services\\AppService.cs",
+              "RelativeToolTip": "TaskManger\\Services\\AppService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T19:49:23.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RepositoryApi.cs",
+              "DocumentMoniker": "C:\\Users\\licen\\OneDrive\\Documentos\\PROYECTOS LOCALES\\TaskManger\\TaskManger\\RepositoryAPI\\RepositoryApi.cs",
+              "RelativeDocumentMoniker": "TaskManger\\RepositoryAPI\\RepositoryApi.cs",
+              "ToolTip": "C:\\Users\\licen\\OneDrive\\Documentos\\PROYECTOS LOCALES\\TaskManger\\TaskManger\\RepositoryAPI\\RepositoryApi.cs",
+              "RelativeToolTip": "TaskManger\\RepositoryAPI\\RepositoryApi.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T19:49:16.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GoalModel.cs",
+              "DocumentMoniker": "C:\\Users\\licen\\OneDrive\\Documentos\\PROYECTOS LOCALES\\TaskManger\\TaskManger\\Models\\GoalModel.cs",
+              "RelativeDocumentMoniker": "TaskManger\\Models\\GoalModel.cs",
+              "ToolTip": "C:\\Users\\licen\\OneDrive\\Documentos\\PROYECTOS LOCALES\\TaskManger\\TaskManger\\Models\\GoalModel.cs",
+              "RelativeToolTip": "TaskManger\\Models\\GoalModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T19:31:26.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DeleteModal.razor",
+              "DocumentMoniker": "C:\\Users\\licen\\OneDrive\\Documentos\\PROYECTOS LOCALES\\TaskManger\\TaskManger\\Components\\Shared\\DeleteModal.razor",
+              "RelativeDocumentMoniker": "TaskManger\\Components\\Shared\\DeleteModal.razor",
+              "ToolTip": "C:\\Users\\licen\\OneDrive\\Documentos\\PROYECTOS LOCALES\\TaskManger\\TaskManger\\Components\\Shared\\DeleteModal.razor",
+              "RelativeToolTip": "TaskManger\\Components\\Shared\\DeleteModal.razor",
+              "ViewState": "AQIAAB4AAAAAAAAAAAD4vzYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T19:09:09.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\licen\\OneDrive\\Documentos\\PROYECTOS LOCALES\\TaskManger\\TaskManger\\_Imports.razor",
+              "RelativeDocumentMoniker": "TaskManger\\_Imports.razor",
+              "ToolTip": "C:\\Users\\licen\\OneDrive\\Documentos\\PROYECTOS LOCALES\\TaskManger\\TaskManger\\_Imports.razor",
+              "RelativeToolTip": "TaskManger\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T19:02:19.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IndexTasks.razor",
+              "DocumentMoniker": "C:\\Users\\licen\\OneDrive\\Documentos\\PROYECTOS LOCALES\\TaskManger\\TaskManger\\Pages\\IndexTasks.razor",
+              "RelativeDocumentMoniker": "TaskManger\\Pages\\IndexTasks.razor",
+              "ToolTip": "C:\\Users\\licen\\OneDrive\\Documentos\\PROYECTOS LOCALES\\TaskManger\\TaskManger\\Pages\\IndexTasks.razor",
+              "RelativeToolTip": "TaskManger\\Pages\\IndexTasks.razor",
+              "ViewState": "AQIAACAAAAAAAAAAAAAmwEIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T18:39:59.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IndexTasks.razor.cs",
+              "DocumentMoniker": "C:\\Users\\licen\\OneDrive\\Documentos\\PROYECTOS LOCALES\\TaskManger\\TaskManger\\Pages\\IndexTasks.razor.cs",
+              "RelativeDocumentMoniker": "TaskManger\\Pages\\IndexTasks.razor.cs",
+              "ToolTip": "C:\\Users\\licen\\OneDrive\\Documentos\\PROYECTOS LOCALES\\TaskManger\\TaskManger\\Pages\\IndexTasks.razor.cs",
+              "RelativeToolTip": "TaskManger\\Pages\\IndexTasks.razor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAMsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T18:32:39.308Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

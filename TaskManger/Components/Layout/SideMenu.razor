@@ -1,0 +1,27 @@
+﻿<Bar Breakpoint="Breakpoint.Desktop" NavigationBreakpoint="Breakpoint.Tablet" ThemeContrast="ThemeContrast.Dark"
+     Mode="BarMode.VerticalInline" CollapseMode="BarCollapseMode.Small" Style="background: #313a46;">
+    <BarToggler />
+    <BarBrand>
+        <BarItem Style="font-size: 17px;">
+            <BarLink To="/Home">
+                <BarIcon IconName="customIcon" />
+                MENÚ
+            </BarLink>
+        </BarItem>
+    </BarBrand>
+    <BarMenu>
+        <BarStart>            
+            <BarItem>
+                <BarLink To="/">
+                    <BarIcon Class="fa-solid fa-list-check" />
+                    Metas
+                </BarLink>
+            </BarItem>            
+        </BarStart>       
+    </BarMenu>
+</Bar>
+
+
+@code {   
+    RenderFragment customIcon =@<img src="/img/logo.png" style="width:32px; height: 32px; border-radius: 1rem;" />;
+}

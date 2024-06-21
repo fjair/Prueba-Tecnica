@@ -1,0 +1,48 @@
+﻿<Blazorise.ThemeProvider Theme="@theme">
+    <Router AppAssembly="typeof(App).Assembly">
+        <Found Context="routeData">
+            <RouteView RouteData="routeData" DefaultLayout="typeof(TaskManger.Layouts.MainLayout)" />
+        </Found>
+        <NotFound>
+            <p>Sorry, there's nothing at this address.</p>
+        </NotFound>
+    </Router>
+    <MessageProvider />
+    <PageProgressProvider />
+    <TaskManger.Components.Shared.Notification />
+</Blazorise.ThemeProvider>
+@code {
+    private Theme theme = new()
+        {
+            BarOptions = new()
+            {
+                HorizontalHeight = "50px"
+            },
+            ColorOptions = new()
+            {
+                Primary = "#3B5998",
+                Secondary = "#6C757D",
+                Success = "#19BF90",
+                Info = "#39afd1",
+                Warning = "#FFFF66",
+                Danger = "#E33054",
+                Light = "#CACDD1",
+                Dark = "#212529",
+            },
+            BackgroundOptions = new()
+            {
+                Primary = "#3B5998",
+                Secondary = "#6C757D",
+                Success = "#19BF90",
+                Info = "#39afd1",
+                Warning = "#FFFF66",
+                Danger = "#E33054",
+                Light = "#CACDD1",
+                Dark = "#212529",
+            },
+            InputOptions = new()
+            {
+                CheckColor = "#3B5998",
+            }
+        };
+}

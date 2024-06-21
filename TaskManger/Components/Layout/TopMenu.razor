@@ -1,0 +1,46 @@
+﻿@using Blazorise.Localization
+
+<Bar @bind-Visible="@topbarVisible" Breakpoint="Breakpoint.Desktop" Style="background: #eef2f7;" TextColor="TextColor.Black50">
+    <BarBrand>
+        <BarItem Class="ms-3 me-3">
+            <Icon Name="IconName.Dashboard"></Icon>
+            <Strong>Administrador</Strong> de Metas
+        </BarItem>
+    </BarBrand>
+
+    <BarToggler />
+
+    <BarMenu>        
+        <BarEnd>
+            <BarItem>
+                <BarLink TextColor="TextColor.Dark">
+                    <Strong>Hola, Mr. Robot!</Strong>
+                </BarLink>
+            </BarItem>
+
+            <BarItem>
+                <BarDropdown RightAligned>
+                    <BarDropdownToggle Class="me-3"><Icon Name="IconName.UserCircle" /></BarDropdownToggle>
+                    <BarDropdownMenu Class="me-3">
+                        <BarDropdownItem To="/Account/My-Profile">
+                            <Icon Class="me-1 fa-solid fa-gear"></Icon>
+                            Mi Perfil
+                        </BarDropdownItem>
+                        <BarDropdownDivider />
+                        <BarDropdownItem>
+                            <Icon Class="fa-solid fa-arrow-right-from-bracket me-1"></Icon>
+                            Cerrar Sesión
+                        </BarDropdownItem>
+                    </BarDropdownMenu>
+                </BarDropdown>
+            </BarItem>
+        </BarEnd>
+    </BarMenu>
+</Bar>
+@code {
+    
+    
+    private bool topbarVisible = false;
+
+    
+}

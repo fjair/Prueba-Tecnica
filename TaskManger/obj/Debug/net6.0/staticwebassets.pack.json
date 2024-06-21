@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\licen\\OneDrive\\Documentos\\PROYECTOS LOCALES\\TaskManger\\TaskManger\\wwwroot\\css\\blazor-ui.css",
+      "PackagePath": "staticwebassets\\css\\blazor-ui.css"
+    },
+    {
+      "Id": "C:\\Users\\licen\\OneDrive\\Documentos\\PROYECTOS LOCALES\\TaskManger\\TaskManger\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\licen\\OneDrive\\Documentos\\PROYECTOS LOCALES\\TaskManger\\TaskManger\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.TaskManger.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.TaskManger.props",
+      "PackagePath": "build\\TaskManger.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.TaskManger.props",
+      "PackagePath": "buildMultiTargeting\\TaskManger.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.TaskManger.props",
+      "PackagePath": "buildTransitive\\TaskManger.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,21 @@
+﻿@using TaskManger.Components.Layout
+@inherits LayoutComponentBase
+
+
+<Layout>
+    <LayoutHeader Fixed>
+        <TopMenu />
+    </LayoutHeader>
+    <Layout Sider>
+        <LayoutSider>
+            <LayoutSiderContent>
+                <SideMenu />
+            </LayoutSiderContent>
+        </LayoutSider>
+        <Layout>
+            <LayoutContent Padding="Padding.Is4.OnX.Is4.FromTop">
+                @Body
+            </LayoutContent>
+        </Layout>
+    </Layout>
+</Layout>

@@ -1,0 +1,150 @@
+[
+  {
+    "ContainingType": "TaskManager.API.Controllers.GoalController",
+    "Method": "Add",
+    "RelativePath": "api/Goal/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "TaskManager.API.Entities.Goal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManager.API.Controllers.GoalController",
+    "Method": "Delete",
+    "RelativePath": "api/Goal/Delete",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "TaskManager.API.Entities.Goal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManager.API.Controllers.GoalController",
+    "Method": "GetAll",
+    "RelativePath": "api/Goal/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManager.API.Controllers.GoalController",
+    "Method": "GetByID",
+    "RelativePath": "api/Goal/GetByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManager.API.Controllers.GoalController",
+    "Method": "Update",
+    "RelativePath": "api/Goal/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "TaskManager.API.Entities.Goal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManager.API.Controllers.TaaskController",
+    "Method": "Add",
+    "RelativePath": "api/Taask/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "TaskManager.API.Entities.Taask",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManager.API.Controllers.TaaskController",
+    "Method": "Delete",
+    "RelativePath": "api/Taask/Delete",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "TaskManager.API.Entities.Taask",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManager.API.Controllers.TaaskController",
+    "Method": "GetAll",
+    "RelativePath": "api/Taask/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManager.API.Controllers.TaaskController",
+    "Method": "GetByID",
+    "RelativePath": "api/Taask/GetByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManager.API.Controllers.TaaskController",
+    "Method": "Update",
+    "RelativePath": "api/Taask/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "TaskManager.API.Entities.Taask",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
